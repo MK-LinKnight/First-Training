@@ -5,4 +5,5 @@ print(list)
 
 list[2] = 1000
 list[3] = '123'
+list[4] = 0
 print(list)
