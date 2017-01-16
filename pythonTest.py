@@ -1,9 +1,10 @@
-#!/usr/bin/python 3
-list = ['abcd', 786, 2.23, 'join', 70.2]
-tinylist = [123, 'john']
-print(list)
+import timeit
+import cProfile
+# import matplotlib
+print(timeit.timeit("x = 2 + 2"))
+print(timeit.timeit("x= sum(range(10))"))
 
-list[2] = 1000
-list[3] = '123'
-list[4] = 0
-print(list)
+def main():
+    print("#######",1)
+
+print(cProfile.run('main()'))
